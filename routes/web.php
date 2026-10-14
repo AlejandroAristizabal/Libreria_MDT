@@ -19,3 +19,6 @@ use App\Http\Controllers\BookController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('categories', CategoryController::class);
+Route::resource('authors', AuthorController::class);
+Route::resource('books', BookController::class);
